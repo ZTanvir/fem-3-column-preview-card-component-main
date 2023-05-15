@@ -84,11 +84,15 @@ body {
   place-items: center;
 }
 .cars-card-padding {
-  padding: 1rem;
+  padding: 2rem;
 }
-
 .cars {
   max-width: 75%;
+  border-radius: 1rem;
+}
+:is(.cars__sedans > article, .cars__suvs > article, .cars__luxuary > article) {
+  display: grid;
+  gap: 1.5rem;
 }
 .cars__sedans {
   background-color: var(--cc-orange);
