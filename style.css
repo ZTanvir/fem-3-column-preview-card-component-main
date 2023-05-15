@@ -77,11 +77,29 @@ h6 {
 
   --ff-big-shoulder: "Big Shoulders Display";
   --ff-lexend: "Lexend Deca";
+
+  --fw-bold: 700;
+  --fw-regular: 400;
 }
 body {
   background-color: var(--cc-light-gray, white);
   display: grid;
   place-items: center;
+}
+/* Typography */
+:is(.cars__sedans-title, .cars__suvs-title, .cars__luxuary-title) {
+  font-family: var(--ff-big-shoulder);
+  text-transform: capitalize;
+  color: var(--cc-light-gray);
+  font-weight: var(--fw-bold);
+}
+:is(
+    .cars__sedans-description,
+    .cars__suvs-description,
+    .cars__luxuary-description
+  ) {
+  color: var(--cc-white);
+  font-weight: var(--fw-regular);
 }
 .cars-card-padding {
   padding: 2rem;
@@ -96,6 +114,9 @@ body {
 }
 .cars__sedans {
   background-color: var(--cc-orange);
+}
+.cars__sedans-title {
+  font-family: var(--ff-big-shoulder);
 }
 .cars__suvs {
   background-color: var(--cc-cyan);
