@@ -89,7 +89,7 @@ body {
 /* Typography */
 :is(.cars__sedans-title, .cars__suvs-title, .cars__luxuary-title) {
   font-family: var(--ff-big-shoulder);
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--cc-light-gray);
   font-weight: var(--fw-bold);
 }
@@ -123,4 +123,14 @@ body {
 }
 .cars__luxuary {
   background-color: var(--dark-cyan);
+}
+.btn {
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
