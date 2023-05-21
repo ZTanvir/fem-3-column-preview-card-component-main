@@ -107,6 +107,7 @@ body {
 .cars {
   max-width: 75%;
   border-radius: 1rem;
+  overflow: hidden;
 }
 :is(.cars__sedans > article, .cars__suvs > article, .cars__luxuary > article) {
   display: grid;
