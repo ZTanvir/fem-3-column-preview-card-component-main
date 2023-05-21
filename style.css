@@ -126,12 +126,23 @@ body {
   background-color: var(--dark-cyan);
 }
 .btn {
+  justify-self: start;
   appearance: none;
   outline: none;
   border: none;
-  padding: 0.5rem 1rem;
+  font-size: 0.87rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cars__sedans-btn {
+  color: var(--cc-orange);
+}
+.cars__suvs-btn {
+  color: var(--cc-cyan);
+}
+.cars__luxuary-btn {
+  color: var(--dark-cyan);
 }
