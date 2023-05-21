@@ -111,7 +111,9 @@ body {
 }
 :is(.cars__sedans > article, .cars__suvs > article, .cars__luxuary > article) {
   display: grid;
+  min-height: 100%;
   gap: 1.5rem;
+  grid-template-rows: auto auto 1fr auto;
 }
 .cars__sedans {
   background-color: var(--cc-orange);
@@ -128,21 +130,45 @@ body {
 .btn {
   justify-self: start;
   appearance: none;
-  outline: none;
-  border: none;
+  border: 2px solid var(--cc-white);
   font-size: 0.87rem;
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--ff-lexend);
 }
 .cars__sedans-btn {
   color: var(--cc-orange);
 }
+.cars__sedans-btn:hover {
+  background-color: var(--cc-orange);
+}
 .cars__suvs-btn {
   color: var(--cc-cyan);
 }
+.cars__suvs-btn:hover {
+  background-color: var(--cc-cyan);
+}
 .cars__luxuary-btn {
   color: var(--dark-cyan);
+}
+.cars__luxuary-btn:hover {
+  background-color: var(--dark-cyan);
+}
+.cars__sedans-btn:hover,
+.cars__luxuary-btn:hover,
+.cars__suvs-btn:hover {
+  color: white;
+  border: 2px solid var(--cc-white);
+}
+@media screen and (min-width: 1024px) {
+  .cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn {
+    padding: 0.6rem 1.5rem;
+  }
 }
